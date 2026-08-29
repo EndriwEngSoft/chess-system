@@ -1,12 +1,30 @@
-# ♟️ Chess System
+# Chess System
 
-Sistema de jogo de xadrez completo desenvolvido em Java, executado via terminal. Projeto com foco na aplicação dos pilares da Programação Orientada a Objetos.
+> Sistema de jogo de xadrez completo desenvolvido em Java, executado via terminal. Projeto com foco na aplicação dos pilares da Programação Orientada a Objetos.
 
-## 📌 Sobre o Projeto
+[![Java](https://img.shields.io/badge/Java-17+-ED8B00?logo=openjdk&logoColor=white)](https://www.oracle.com/java/technologies/downloads/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+---
+
+## Índice
+
+1. [Visão geral](#visão-geral)
+2. [Stack técnica](#stack-técnica)
+3. [Arquitetura](#arquitetura)
+4. [Conceitos aplicados](#conceitos-aplicados)
+5. [Como rodar localmente](#como-rodar-localmente)
+6. [Preview](#preview)
+7. [Licença](#licença)
+8. [Autor](#autor)
+
+---
+
+## Visão geral
 
 Este projeto implementa as regras completas do xadrez em Java puro, sem frameworks externos. O objetivo foi praticar modelagem de domínio, herança, polimorfismo e encapsulamento em um cenário real e complexo.
 
-## ✨ Funcionalidades
+Funcionalidades principais:
 
 - Tabuleiro 8x8 renderizado no terminal com cores ANSI
 - Todas as peças implementadas: Rei, Rainha, Torre, Bispo, Cavalo e Peão
@@ -16,13 +34,19 @@ Este projeto implementa as regras completas do xadrez em Java puro, sem framewor
 - Detecção de xeque e xeque-mate
 - Exibição de peças capturadas
 
-## 🛠️ Tecnologias
+---
 
-- Java 17+
-- Programação Orientada a Objetos (POO)
-- Git e GitHub
+## Stack técnica
 
-## 🏗️ Arquitetura
+| Camada | Tecnologia |
+|---|---|
+| Linguagem | Java 17+ |
+| Paradigma | Programação Orientada a Objetos (POO) |
+| Versionamento | Git e GitHub |
+
+---
+
+## Arquitetura
 
 ```
 src/
@@ -35,7 +59,9 @@ src/
     └── ChessPosition.java
 ```
 
-## 🧠 Conceitos Aplicados
+---
+
+## Conceitos aplicados
 
 - **Herança** — ChessPiece extends Piece, cada peça estende ChessPiece
 - **Polimorfismo** — método `possibleMoves()` sobrescrito em cada peça
@@ -43,25 +69,28 @@ src/
 - **Tratamento de exceções** — ChessException e BoardException customizadas
 - **Coleções** — listas para peças ativas e capturadas
 
-## ▶️ Como Executar
+---
+
+## Como rodar localmente
+
+### Pré-requisitos
+
+- JDK 17+
+- Terminal Git Bash ou Linux (recomendado, para renderização correta das cores ANSI)
+
+### Passos
 
 ```bash
-# Clone o repositório
 git clone https://github.com/EndriwEngSoft/chess-system.git
-
-# Entre na pasta
 cd chess-system
 
-# Compile
 javac -d bin src/application/Program.java
-
-# Execute
 java -cp bin application.Program
 ```
 
-> **Recomendado:** Execute no terminal Git Bash ou Linux para renderização correta das cores ANSI.
+---
 
-## 📷 Preview
+## Preview
 
 ```
 8 R N B Q K B N R
@@ -75,7 +104,15 @@ java -cp bin application.Program
   a b c d e f g h
 ```
 
-## 👨‍💻 Autor
+---
+
+## Licença
+
+Distribuído sob a licença MIT. Veja [LICENSE](LICENSE) para o texto completo.
+
+---
+
+## Autor
 
 **Endriw Colvara Bento**  
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat&logo=linkedin&logoColor=white)](https://linkedin.com/in/endriw-bento)
